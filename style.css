@@ -1,14 +1,24 @@
-body {
-  font-family: Arial, sans-serif;
+/* RESET VISUAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* CARROSSEL */
 .carousel {
   width: 600px;
   height: 400px;
   margin: 40px auto;
   position: relative;
   overflow: hidden;
-  background: #000;
+  background: black;
 }
 
 .carousel-track {
@@ -24,16 +34,16 @@ body {
   flex-shrink: 0;
 }
 
-/* Botões */
+/* BOTÕES */
 .carousel button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
   color: white;
   border: none;
-  font-size: 24px;
-  padding: 10px 14px;
+  font-size: 28px;
+  padding: 10px 16px;
   cursor: pointer;
   z-index: 10;
 }
@@ -47,5 +57,5 @@ body {
 }
 
 .carousel button:hover {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.8);
 }
