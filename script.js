@@ -3,13 +3,16 @@ let indexAtual = 0;
 let fotos = [];
 
 fetch("data/fotos.json")
-  .then(res => res.json())
+  .then(res => {
+    console.log("JSON status:", res.status);
+    return res.json();
+  })
   .then(dados => {
+    console.log("Dados recebidos:", dados);
     fotos = dados;
     criarSlides();
     atualizarCarrossel();
   });
-
 function criarSlides() {
   const track = document.querySelector(".carousel-track");
   track.innerHTML = "";
