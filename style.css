@@ -12,22 +12,28 @@ body {
 
 .carousel {
   width: 600px;
+  max-height: 80vh;      /* limite, não força corte */
   margin: 40px auto;
   position: relative;
+  overflow: hidden;     /* NECESSÁRIO */
   background: black;
 }
+
 .carousel-track {
   display: flex;
-  height: 100%;
   transition: transform 0.4s ease;
 }
 
 .carousel-track img {
   width: 100%;
   height: auto;
-  display: block;
+  max-height: 80vh;
+  object-fit: contain;
   flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
 }
+
 /* FAIXAS LATERAIS INVISÍVEIS */
 .carousel button {
   position: absolute;
