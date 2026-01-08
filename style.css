@@ -40,18 +40,28 @@ body {
   top: 0;
   width: 70px;
   height: 100%;
-  background: transparent; /* SEM FUNDO */
-  color: rgba(255,255,255,0.6);
+  background: transparent;
+  color: rgba(255,255,255,0.7);
   border: none;
   font-size: 56px;
-  font-weight: 300;
   cursor: pointer;
   z-index: 10;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.3s;
+
+  user-select: none;
 }
+
+.carousel .prev {
+  left: 0;
+}
+
+.carousel .next {
+  right: 0;
+}
+
 .carousel button:hover {
   color: rgba(255,255,255,1);
 }
