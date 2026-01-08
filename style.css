@@ -12,13 +12,10 @@ body {
 
 .carousel {
   width: 600px;
-  height: 400px;
   margin: 40px auto;
   position: relative;
-  overflow: hidden;
   background: black;
 }
-
 .carousel-track {
   display: flex;
   height: 100%;
@@ -27,11 +24,10 @@ body {
 
 .carousel-track img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: black;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
 }
-
 /* FAIXAS LATERAIS INVISÍVEIS */
 .carousel button {
   position: absolute;
