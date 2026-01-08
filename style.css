@@ -1,7 +1,6 @@
 body {
-  background: #000; /* fundo uniforme */
+  background: red !important;
 }
-
 .carousel {
   background: transparent;
 }
