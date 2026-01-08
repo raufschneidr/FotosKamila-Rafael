@@ -25,3 +25,12 @@ function atualizarCarrossel() {
   const largura = 600;
   track.style.transform = `translateX(-${indexAtual * largura}px)`;
 }
+document.querySelector(".next").addEventListener("click", () => {
+  indexAtual = (indexAtual + 1) % fotos.length;
+  atualizarCarrossel();
+});
+
+document.querySelector(".prev").addEventListener("click", () => {
+  indexAtual = (indexAtual - 1 + fotos.length) % fotos.length;
+  atualizarCarrossel();
+});
