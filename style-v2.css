@@ -32,35 +32,24 @@ body {
   flex-shrink: 0;
 }
 
-/* FAIXAS LATERAIS */
+/* FAIXAS LATERAIS INVISÍVEIS */
 .carousel button {
   position: absolute;
   top: 0;
   width: 70px;
   height: 100%;
-  background: rgba(0,0,0,0.03);
-  color: white;
+  background: transparent; /* SEM FUNDO */
+  color: rgba(255,255,255,0.6);
   border: none;
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 300;
   cursor: pointer;
   z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.35;
-  transition: background 0.3s, opacity 0.3s;
+  transition: color 0.3s;
 }
-
-.carousel .prev {
-  left: 0;
-}
-
-.carousel .next {
-  right: 0;
-}
-
 .carousel button:hover {
-  background: rgba(0,0,0,0.15);
-  opacity: 1;
+  color: rgba(255,255,255,1);
 }
