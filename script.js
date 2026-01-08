@@ -1,3 +1,4 @@
+console.log("JS carregado");
 let indexAtual = 0;
 let fotos = [];
 
