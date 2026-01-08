@@ -1,9 +1,8 @@
 .carousel {
-  width: 600px;
-  margin: 40px auto;
+  display: inline-block;   /* CRÍTICO */
   position: relative;
-  overflow: hidden;
-  background: black;
+  margin: 40px auto;
+  background: transparent;
 }
 
 .carousel-track {
