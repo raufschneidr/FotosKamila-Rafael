@@ -1,4 +1,3 @@
-/* RESET VISUAL */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   color: #fff;
 }
 
-/* CARROSSEL */
 .carousel {
   width: 600px;
   height: 400px;
@@ -34,13 +32,13 @@ body {
   flex-shrink: 0;
 }
 
-/* BOTÕES - FAIXAS LATERAIS */
+/* FAIXAS LATERAIS */
 .carousel button {
   position: absolute;
   top: 0;
-  width: 60px;
+  width: 70px;
   height: 100%;
-  background: rgba(0,0,0,0.05);
+  background: rgba(0,0,0,0.03);
   color: white;
   border: none;
   font-size: 48px;
@@ -50,7 +48,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.4;
+  opacity: 0.35;
   transition: background 0.3s, opacity 0.3s;
 }
 
@@ -65,12 +63,4 @@ body {
 .carousel button:hover {
   background: rgba(0,0,0,0.15);
   opacity: 1;
-}
-
-.carousel .next {
-  right: 10px;
-}
-
-.carousel button:hover {
-  background: rgba(0,0,0,0.8);
 }
